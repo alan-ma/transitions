@@ -1,0 +1,75 @@
+body {
+	margin: 0;
+}
+#container {
+	max-width: 1080px;
+	margin: 50px auto;
+	text-align: center;
+}
+h1 {
+	font-weight: normal;
+	font-family: sans-serif;
+}
+.transition {
+	width: 30vw;
+	height: 30vw;
+	border: 3px solid #000;
+	margin: auto;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#diamond #wrapper {
+	height: 200px;
+	width: 200px;
+	position: relative;
+	transform: rotate(44deg);
+}
+#diamond .corner {
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	transition: transform 400ms ease;
+	position: absolute;
+}
+#diamond .corner.top {
+	border-top: 3px solid #555;
+	transform-origin: center top;
+}
+#diamond .corner.right {
+	border-right: 3px solid #555;
+	transform-origin: right center;
+}
+#diamond .corner.bottom {
+	border-bottom: 3px solid #555;
+	transform-origin: center bottom;
+}
+#diamond .corner.left {
+	border-left: 3px solid #555;
+	transform-origin: left center;
+}
+#diamond:hover .corner {
+	transform: rotate(89deg);
+}
+#diamond:hover {
+	border: 3px solid #53FF2B;
+}
+
+#diamond .corner.prime.top {
+	border-top: 30px solid #555;
+}
+#diamond .corner.prime.right {
+	border-right: 30px solid #555;
+}
+#diamond .corner.prime.bottom {
+	border-bottom: 30px solid #555;
+}
+#diamond .corner.prime.left {
+	border-left: 30px solid #555;
+}
+
+
+
+
